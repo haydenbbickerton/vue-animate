@@ -1,0 +1,26 @@
+@keyframes rotate-enter {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-leave {
+  from {
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
