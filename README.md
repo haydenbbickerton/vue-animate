@@ -98,10 +98,6 @@ Include the stylesheet:
   * `zoomRight`
   * `zoomUp`
 
-  This list will be updated as new animations are added. You can also add these classes to your elements (but not as transition names):
-  * `hinge`
-  * `infinite`
-
 # License
 
 [MIT](http://opensource.org/licenses/MIT)

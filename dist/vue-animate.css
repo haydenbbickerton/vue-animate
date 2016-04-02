@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * vue-animate v0.0.1
+ * vue-animate v0.0.2
  * (c) 2016 Hayden Bickerton
  * Released under the MIT License.
  * Documentation: https://github.com/haydenbbickerton/vue-animate
@@ -493,21 +493,6 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.bounce-transition, .bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp.infinite {
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.bounce-transition, .bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp.hinge {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-.bounce-transition, .bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp.flipOutX,
-.bounce-transition, .bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp.flipOutY,
-.bounce-transition, .bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp.bounceIn,
-.bounce-transition, .bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp.bounceOut {
-  -webkit-animation-duration: .75s;
-          animation-duration: .75s;
-}
 .bounceUp-enter {
   -webkit-animation-name: bounceUp-enter;
           animation-name: bounceUp-enter;
@@ -928,21 +913,6 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.fade-transition, .fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig.infinite {
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.fade-transition, .fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig.hinge {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-.fade-transition, .fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig.flipOutX,
-.fade-transition, .fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig.flipOutY,
-.fade-transition, .fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig.bounceIn,
-.fade-transition, .fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig.bounceOut {
-  -webkit-animation-duration: .75s;
-          animation-duration: .75s;
-}
 .fadeUpBig-enter {
   -webkit-animation-name: fadeUpBig-enter;
           animation-name: fadeUpBig-enter;
@@ -1321,21 +1291,6 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.rotate-transition, .rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight.infinite {
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.rotate-transition, .rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight.hinge {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-.rotate-transition, .rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight.flipOutX,
-.rotate-transition, .rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight.flipOutY,
-.rotate-transition, .rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight.bounceIn,
-.rotate-transition, .rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight.bounceOut {
-  -webkit-animation-duration: .75s;
-          animation-duration: .75s;
-}
 .rotateUpRight-enter {
   -webkit-animation-name: rotateUpRight-enter;
           animation-name: rotateUpRight-enter;
@@ -1557,21 +1512,6 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-}
-.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp.infinite {
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp.hinge {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp.flipOutX,
-.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp.flipOutY,
-.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp.bounceIn,
-.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp.bounceOut {
-  -webkit-animation-duration: .75s;
-          animation-duration: .75s;
 }
 .slideUp-enter {
   -webkit-animation-name: slideUp-enter;
@@ -1912,21 +1852,6 @@
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-}
-.zoom-transition, .zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp.infinite {
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.zoom-transition, .zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp.hinge {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-.zoom-transition, .zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp.flipOutX,
-.zoom-transition, .zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp.flipOutY,
-.zoom-transition, .zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp.bounceIn,
-.zoom-transition, .zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp.bounceOut {
-  -webkit-animation-duration: .75s;
-          animation-duration: .75s;
 }
 .zoomUp-enter {
   -webkit-animation-name: zoomUp-enter;

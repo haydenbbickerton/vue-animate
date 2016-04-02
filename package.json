@@ -1,6 +1,6 @@
 {
   "name": "vue-animate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "LESS cross-browser animation library, for use with Vue.js. Ported from Animate.css.",
   "author": {
     "name": "Hayden Bickerton",
