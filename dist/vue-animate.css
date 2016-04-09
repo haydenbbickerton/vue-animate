@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * vue-animate v0.0.3
+ * vue-animate v0.0.4
  * (c) 2016 Hayden Bickerton
  * Released under the MIT License.
  * Documentation: https://github.com/haydenbbickerton/vue-animate
@@ -488,11 +488,21 @@
   }
 }
 .bounce-transition,
-.bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp {
+.bounceDown-transition, .bounceLeft-transition, .bounceRight-transition, .bounceUp-transition {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.bounce-enter,
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn;
+}
+.bounce-leave,
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+          animation-name: bounceOut;
 }
 .bounceUp-enter,
 .bounceInUp {
@@ -909,11 +919,21 @@
   }
 }
 .fade-transition,
-.fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig {
+.fadeDown-transition, .fadeDownBig-transition, .fadeLeft-transition, .fadeLeftBig-transition, .fadeRight-transition, .fadeRightBig-transition, .fadeUp-transition, .fadeUpBig-transition {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.fade-enter,
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+.fade-leave,
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
 }
 .fadeUpBig-enter,
 .fadeInUpBig {
@@ -1296,11 +1316,21 @@
   }
 }
 .rotate-transition,
-.rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight {
+.rotateDownLeft-transition, .rotateDownRight-transition, .rotateUpLeft-transition, .rotateUpRight-transition {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.rotate-enter,
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+          animation-name: rotateIn;
+}
+.rotate-leave,
+.rotateOut {
+  -webkit-animation-name: rotateOut;
+          animation-name: rotateOut;
 }
 .rotateUpRight-enter,
 .rotateInUpRight {
@@ -1519,11 +1549,21 @@
   }
 }
 .slide-transition,
-.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp {
+.slideDown-transition, .slideLeft-transition, .slideRight-transition, .slideUp-transition {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.slide-enter,
+.slideIn {
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+}
+.slide-leave,
+.slideOut {
+  -webkit-animation-name: slideOut;
+          animation-name: slideOut;
 }
 .slideUp-enter,
 .slideInUp {
@@ -1868,11 +1908,21 @@
   }
 }
 .zoom-transition,
-.zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp {
+.zoomDown-transition, .zoomLeft-transition, .zoomRight-transition, .zoomUp-transition {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.zoom-enter,
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+.zoom-leave,
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+          animation-name: zoomOut;
 }
 .zoomUp-enter,
 .zoomInUp {

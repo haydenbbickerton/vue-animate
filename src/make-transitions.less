@@ -5,9 +5,18 @@
     // stock 'animate' class from Animate.css.
     @classesJoin: replace(~'@{names}', ', ', '-transition, .@{base}', g);
 
-    .@{base}-transition, .@{base}@{classesJoin} {
+    .@{base}-transition, .@{base}@{classesJoin}-transition {
         animation-duration: @animationDuration;
         animation-fill-mode: both;
+    }
+
+    // Entrance/Exit for the base class
+    .@{base}-enter, .@{base}In {
+        animation-name: ~'@{base}In';
+    }
+
+    .@{base}-leave, .@{base}Out {
+        animation-name: ~'@{base}Out';
     }
 
      // Loop through the different animations, and set
