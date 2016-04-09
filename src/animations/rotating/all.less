@@ -4,5 +4,5 @@
 @import 'rotateUpLeft';
 @import 'rotateUpRight';
 
-@rotates: rotate, rotateDownLeft, rotateDownRight, rotateUpLeft, rotateUpRight;
-.make-transitions(@rotates);
+@rotates: DownLeft, DownRight, UpLeft, UpRight;
+.make-transitions(rotate, @rotates);

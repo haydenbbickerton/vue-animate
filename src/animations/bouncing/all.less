@@ -4,5 +4,5 @@
 @import 'bounceRight';
 @import 'bounceUp';
 
-@bounces: bounce, bounceDown, bounceLeft, bounceRight, bounceUp;
-.make-transitions(@bounces);
+@bounces: Down, Left, Right, Up;
+.make-transitions(bounce, @bounces);

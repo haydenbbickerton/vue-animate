@@ -1,11 +1,11 @@
-.make-transitions(@names) {
+.make-transitions(@base, @names) {
 
     // We'll make a single rule for all transitions that
     // sets the animation duration. This is basically the
     // stock 'animate' class from Animate.css.
-    @namesJoin: replace(~'@{names}', ', ', '-transition, .', g);
+    @classesJoin: replace(~'@{names}', ', ', '-transition, .@{base}', g);
 
-    .@{namesJoin} {
+    .@{base}-transition, .@{base}@{classesJoin} {
         animation-duration: @animationDuration;
         animation-fill-mode: both;
     }
@@ -15,11 +15,11 @@
     .-(@i: length(@names)) when (@i > 0) {
 
         @name: extract(@names, @i);
-        .@{name}-enter {
-            animation-name: ~'@{name}-enter';
+        .@{base}@{name}-enter, .@{base}In@{name} {
+            animation-name: ~'@{base}In@{name}';
         }
-        .@{name}-leave {
-            animation-name: ~'@{name}-leave';
+        .@{base}@{name}-leave, .@{base}Out@{name} {
+            animation-name: ~'@{base}Out@{name}';
         }
         .-((@i - 1));
 

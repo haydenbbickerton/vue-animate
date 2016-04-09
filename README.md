@@ -47,7 +47,7 @@ Include the stylesheet:
   enter/leave is already written in the stylesheet, so just remove *In/Out* from the name and you're golden.
 
 ####Custom Transition Classes
-  This code basically switches Animate.css's *In/Out* with *-enter/-leave* classes to easily use Vue's transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you'll have to add *-enter/-leave* to the classes:
+  As of 0.0.3, Animate.css's original classnames are supported on enter/leave transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you can either add *-enter/-leave* to the classes:
 
   ```js
   Vue.transition('bounce', {
@@ -55,7 +55,14 @@ Include the stylesheet:
     leaveClass: 'bounceRight-leave'
   })
   ```
-  I want to change the code to still be able to use Animate.css's orginal class names, for ease of use.
+  Or use the regular *In/Out* syntax:
+
+  ```js
+  Vue.transition('bounce', {
+    enterClass: 'bounceInLeft',
+    leaveClass: 'bounceOutRight'
+  })
+  ```
 
 ####Supported Animations
   Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue-animate (aka - *what you can put in the transition="x"* attribute) as of right now:

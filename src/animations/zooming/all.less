@@ -4,5 +4,5 @@
 @import 'zoomRight';
 @import 'zoomUp';
 
-@zooms: zoom, zoomDown, zoomLeft, zoomRight, zoomUp;
-.make-transitions(@zooms);
+@zooms: Down, Left, Right, Up;
+.make-transitions(zoom, @zooms);
