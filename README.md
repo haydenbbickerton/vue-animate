@@ -6,6 +6,8 @@
 
 A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/daneden/animate.css "Animate.css"). For use with Vue's built-in transitions.
 
+ - **[DEMO](http://luoye.pw/vue-animate-demo/)** (courtesy of [luoye-fe](https://github.com/luoye-fe))
+
 ##Installation
 ####HTML
 Include the stylesheet:
